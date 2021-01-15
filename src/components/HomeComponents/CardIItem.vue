@@ -1,5 +1,5 @@
 <template>
-  <div id="carditem">
+  <div id="carditem" @click="detailPage(article_id)">
         <div class="md-title">
           <!-- md尺寸的小球 -->
           <div class="right-around md-ball">
@@ -7,7 +7,7 @@
           </div>
           <p class="title"> <i class="iconfont icon-lianjie"></i>  {{title}}</p>
         </div>
-         <img @click="detailPage(article_id)" :src="Itemimg" alt="封面">
+         <img :src="Itemimg" alt="封面">
         <Card :contentid="id" class="card">
           <!-- xl尺寸显示的三个小球 -->
           <div class="right-around xl-ball">
