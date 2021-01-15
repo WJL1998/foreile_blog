@@ -9,12 +9,12 @@
                 <div class="side"></div>
             </div>
             <div class="text">
-                <div class="text--backing">CODELEI</div>
+                <div class="text--backing">FOREILE</div>
                 <div class="text--left">
-                    <div class="inner">CODELEI</div>
+                    <div class="inner">FOREILE</div>
                 </div>
                 <div class="text--right">
-                    <div class="inner">CODELEI</div>
+                    <div class="inner">FOREILE</div>
                 </div>
             </div>
         </div>
