@@ -10,7 +10,7 @@ export default new Vuex.Store({
     Color:'#333',
     LoadingShow: false,
     LoadingTitle:'正在加载请稍后...',
-    baseURL:'http://192.168.1.84:3000'
+    baseURL:'http://121.196.102.29:3000'
     },
   mutations: {
     updateShow(state,data) {
