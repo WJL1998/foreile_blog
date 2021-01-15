@@ -1,13 +1,13 @@
 <template>
       <div :class="{show:$store.state.isshow}" class="MeunTab">
               <div class="profile">
-                <img width="100" height="100" src="../assets/images/swiper1.jpeg" alt="">
-                <div class="profile">Codelei</div>
+                <img width="100" height="100" src="../assets/images/foreile.jpg" alt="">
+                <div class="profile">Foreile</div>
             </div>
       <List style="padding-left:1.5rem;">
             <ListItem>
-              <i class="iconfont icon-qq">: 755425595,</i>
-              <i class="iconfont icon-weixin">: x972761675</i>
+              <i class="iconfont icon-qq">: 1308824999,</i>
+              <i class="iconfont icon-weixin">: 1308824999</i>
               </ListItem>
             <ListItem>
               <i @click="$router.push('/home')" class="iconfont icon-shouyex"> 首页</i>
