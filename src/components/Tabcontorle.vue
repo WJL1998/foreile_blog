@@ -64,7 +64,7 @@
     .MeunTab {
       width:23rem;
       height: 100vh;
-      background: url('../assets/images/wetherSon.jpg') no-repeat center;
+      background: url('../assets/images/img.png') no-repeat center;
       background-size: cover;
       position: fixed;
       left: -35rem;
@@ -79,7 +79,7 @@
         font-size: 1.2rem;
         font-style:normal;
         margin-left: 1rem;
-        color: rgb(255, 0, 106);
+        color: #ffffff;
       }
       @media screen and (min-width:992px) {
         i,span{
@@ -99,7 +99,7 @@
         color: white;
         font-size: 25px;
         position: relative;
-         background: linear-gradient(yellow,red );
+         background: linear-gradient(#00fff3, #fbffca);
          -webkit-background-clip: text;
         -moz-background-clip: text;
         color: transparent;
