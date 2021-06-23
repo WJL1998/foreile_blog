@@ -5,13 +5,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    isshow:false,
-    fontColor: false,
+    isshow:false,   //移动端展示
+    fontColor: false, //背景颜色切换
     Color:'#333',
-    LoadingShow: false,
+    LoadingShow: false, //loading效果展示
     LoadingTitle:'正在加载请稍后...',
-    baseURL:'http://121.196.102.29:3000'
-    },
+    baseURL:'https://www.foreile.link:3000'
+  },
   mutations: {
     updateShow(state,data) {
       state.isshow = data

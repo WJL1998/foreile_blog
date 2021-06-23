@@ -46,6 +46,7 @@
             { name:' Article-List',icon:'iconfont icon-wenzhang', path:'/article' },
             { name:' Demo',icon:'iconfont icon-anli', path:'/demo' },
             { name:' LeaveMessage',icon:'iconfont icon-liuyan2', path:'/message' },
+            { name:' Statistical',icon:'iconfont icon-liuyan2', path:'/sendSms' },
             { name:' Photos',icon:'iconfont icon-xiangce', path:'/photos' },
             { name:' Github',icon:'iconfont icon-GitHub', path:'https://github.com/WJL1998' },
         ]

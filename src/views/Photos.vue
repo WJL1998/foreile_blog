@@ -1,24 +1,29 @@
 <template>
   <div id="about">
-    <header :style="{color: Color}"> 
+    <header :style="{color: Color}">
       <Icon type="md-ribbon"></Icon>当前位置: <router-link style="cursor:pointer" tag="span" to="/">首页</router-link> > 云相册
       </header>
         <div id="container">
           <div class="card" v-for="(item, index) in talkdata" :key="index">
-            <img v-lazy="item.imgsrc">  
+            <img v-lazy="item.imgsrc">
             <p>{{item.content}}</p>
             <p>{{item.datetime}}</p>
           </div>
+          <Button @click="prev">上一页</Button>
+          <Button @click="next">下一页</Button>
       </div>
+
   </div>
 </template>
 <script>
-import  { getnotedetail } from '../components/NetWork/request'
+import {PageSizeChange} from '../components/NetWork/request'
   export default {
     name:'about',
     data() {
       return {
-        talkdata:[]
+        talkdata:[],
+        page: 1,
+        pageSize: 20
       }
     },
     computed:{
@@ -27,15 +32,29 @@ import  { getnotedetail } from '../components/NetWork/request'
       }
     },
     mounted() {
-      getnotedetail('/upload/gettalk')
-      .then(res => {
-        if(res.data.err === 0) {
-            this.talkdata = res.data.data;
-        } else {
-          this.$Message.error(res.data.data);
-        }
-      })
+      this.ajax(1);
     },
+    methods: {
+      ajax(page) {
+        PageSizeChange("/upload/gettalk?page="+page+"&pagesize=20").then(res => {
+          if(res.data.err === 0) {
+            this.talkdata = res.data.data;
+          } else {
+            this.$Message.error(res.data.data);
+          }
+        })
+      },
+      prev(){
+        if(this.page <= 1) return;
+        this.page--;
+        this.ajax(this.page);
+      },
+      next(){
+        if(this.page >= 12) return;
+        this.page++;
+        this.ajax(this.page);
+      }
+    }
   }
 </script>
 <style lang="scss" scoped>

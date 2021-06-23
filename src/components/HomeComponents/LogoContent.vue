@@ -3,7 +3,7 @@
     <div class="logo_name">
       <i class="meun iconfont icon-caidan"></i>
       <img v-show="$route.name !== 'home'" src="../../assets/images/logo.jpg" alt />
-      <p v-show="$route.name !== 'home'">CODELEI</p>
+      <p v-show="$route.name !== 'home'">Foreile</p>
       <i @click="$router.push('/category')" class="search iconfont icon-search"></i>
     </div>
   </div>
@@ -33,6 +33,7 @@ export default {
       color: lightgreen;
       animation: triggerColor 7s infinite alternate;
       font-family: "../../assets/font/Oh-Chewy-2.ttf";
+      letter-spacing: 3px;
     }
     img {
       width: 3.5rem;

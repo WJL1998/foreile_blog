@@ -1,38 +1,38 @@
 <template>
       <div :class="{show:$store.state.isshow}" class="MeunTab">
-              <div class="profile">
-                <img width="100" height="100" src="../assets/images/foreile.jpg" alt="">
-                <div class="profile">Foreile</div>
-            </div>
-      <List style="padding-left:1.5rem;">
-            <ListItem>
-              <i class="iconfont icon-qq">: 1308824999,</i>
-              <i class="iconfont icon-weixin">: 1308824999</i>
-              </ListItem>
-            <ListItem>
-              <i @click="$router.push('/home')" class="iconfont icon-shouyex"> 首页</i>
-            </ListItem>
-            <ListItem>
-              <i @click="$router.push('/demo')" class="iconfont icon--"> Demo</i>
-            </ListItem>
-            <ListItem>
-              <i @click="$router.push('/photos')" class="iconfont icon-biaoti"> 云相册</i>
-            </ListItem>
-            <ListItem>
-              <i @click="$router.push('/message')" class="iconfont icon-liuyan2"> 留言板</i>
-            </ListItem>
+        <div class="profile">
+          <img width="100" height="100" src="../assets/images/foreile.jpg" alt="">
+          <div class="profile">Foreile</div>
+        </div>
+        <List style="padding-left:1.5rem;">
+          <ListItem>
+            <i class="iconfont icon-qq">: 1308824999,</i>
+            <i class="iconfont icon-weixin">: 1308824999</i>
+          </ListItem>
+          <ListItem>
+            <i @click="$router.push('/home')" class="iconfont icon-shouyex"> 首页</i>
+          </ListItem>
+          <ListItem>
+            <i @click="$router.push('/demo')" class="iconfont icon--"> Demo</i>
+          </ListItem>
+          <ListItem>
+            <i @click="$router.push('/photos')" class="iconfont icon-biaoti"> 云相册</i>
+          </ListItem>
+          <ListItem>
+            <i @click="$router.push('/message')" class="iconfont icon-liuyan2"> 留言板</i>
+          </ListItem>
           <ListItem>
           <i @click="Gogithub"><Icon style="margin-left:0" type="logo-github"/> Github</i>
           </ListItem>
-            <ListItem>
-              <i @click="$router.push('/article')" class="iconfont icon-wenzhang"> 文章列表</i>
+          <ListItem>
+            <i @click="$router.push('/article')" class="iconfont icon-wenzhang"> 文章列表</i>
+          </ListItem>
+          <ListItem>
+            <i @click="$router.push('/profile')" class="iconfont icon-touxiang"> 个人信息</i>
             </ListItem>
-            <ListItem>
-              <i @click="$router.push('/profile')" class="iconfont icon-touxiang"> 个人信息</i>
-              </ListItem>
-            <ListItem>
-              <i @click="skip" class="iconfont icon-denglu"> 登陆 / 注册</i>
-            </ListItem>
+          <ListItem>
+            <i @click="skip" class="iconfont icon-denglu"> 登陆 / 注册</i>
+          </ListItem>
         </List>
      </div>
 </template>
@@ -54,7 +54,7 @@
             this.$router.push('/login')
         },
         Gogithub() {
-          location.href='https://github.com/Acmenlei'
+          location.href='https://github.com/WJL1998'
         }
     },
   }

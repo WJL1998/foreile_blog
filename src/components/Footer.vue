@@ -2,8 +2,7 @@
   <div v-show="$route.path !== '/home'" id="Footer">
     <div class="talk">
       <img class="wx" src="../assets/images/wx.png" alt="">
-       <p>&copy; codelei.cn 版权所有 Blog由Vue,nodejs驱动. <a href="http://www.beian.miit.gov.cn"></a></p>
-       <p><img src="../assets/images/beianicon.png" alt=""></p>
+       <p>&copy; foreile.link 版权所有 Blog由Vue,nodejs驱动. <br /><img src="../assets/images/beianicon.png" alt=""><a href="https://beian.miit.gov.cn" target="_blank">粤ICP备2021010015号</a></p>
     </div>
   </div>
 </template>
@@ -36,11 +35,14 @@
     }
     p {
       img {
-        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-left: -3px;
+        margin-right: 5px;
       }
     }
     a {
       color: #f2f2f2;
+      vertical-align: super;
     }
   }
 }

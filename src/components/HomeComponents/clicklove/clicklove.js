@@ -32,7 +32,7 @@
                     requestAnimationFrame(gameloop);
                 }
                 function attachEvent(){
-                    var old = typeof window.οnclick==="function" && window.onclick;
+                    var old = typeof window.onclick==="function" && window.onclick;
                     window.onclick = function(event){
                         old && old();
                         createHeart(event);

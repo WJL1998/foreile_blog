@@ -12,7 +12,7 @@
       return {
           LinkList:[{name:"首页",imageURL:"md-home",path:'/'},{name:"文章列表",imageURL:'ios-bookmarks-outline',path:'/article'},
                     {name:"Demo",imageURL:"logo-youtube",path:'/demo'},{name:"云相册",imageURL:'md-images',path:'/photos'},
-                    {name:"个人信息",imageURL:'md-person',path:'/profile'},{name:"留言板",imageURL:'ios-create',path:'/message'},
+                    {name:"个人信息",imageURL:'md-person',path:'/profile'},{name:"恋爱统计",imageURL:'ios-send',path:'/sendSms'},{name:"留言板",imageURL:'ios-create',path:'/message'},
                     {name:"GitHub",imageURL:'logo-github',path:'https://github.com/WJL1998'},{name:"登陆 / 注册",imageURL:"md-contact",path:'/login'}
           ]
       };
@@ -40,7 +40,7 @@
 </script>
 <style lang="scss" scoped>
 @font-face {
-  font-family: 'codeleilei';
+  font-family: 'codeForeile';
   src: url('../../assets/font/2012DingYongKangYingBiKaiShuXinBan-2.ttf');
 }
 #tabbarLink {
@@ -49,7 +49,7 @@
   justify-content: center;
   align-items: center;
   a {
-    font-family: '微软雅黑';
+    font-family: 'codeForeile';
     color: #f2f2f2;
     margin: 0 1rem;
     padding: .3rem;
