@@ -1,23 +1,23 @@
 <template>
   <div id="center">
-        <div class="wrapper">
-            <div class="slash"></div>
-            <div class="sides">
-                <div class="side"></div>
-                <div class="side"></div>
-                <div class="side"></div>
-                <div class="side"></div>
+    <div class="wrapper">
+        <div class="slash"></div>
+        <div class="sides">
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+        </div>
+        <div class="text">
+            <div class="text--backing">FOREILE</div>
+            <div class="text--left">
+                <div class="inner">FOREILE</div>
             </div>
-            <div class="text">
-                <div class="text--backing">FOREILE</div>
-                <div class="text--left">
-                    <div class="inner">FOREILE</div>
-                </div>
-                <div class="text--right">
-                    <div class="inner">FOREILE</div>
-                </div>
+            <div class="text--right">
+                <div class="inner">FOREILE</div>
             </div>
         </div>
+    </div>
     <div class="loading">
         <span class="status online"></span>
         <span class="status invisible"></span>
@@ -34,7 +34,12 @@
         <i class="iconfont icon-qq"> : 1308824999</i>
 <!--        <i class="iconfont icon-qq"> : 1308824999 || <i class="iconfont icon-qq"> 前端群</i>: 700785102</i>-->
     </div>
-</div>
+    <div style=" position: absolute; bottom: 20px; left: calc(50% - 142px); text-align: center;">
+      <p data-v-42f0e854="">© foreile.link 版权所有 Blog由Vue,nodejs驱动.</p>
+      <img data-v-42f0e854="" src="img/beianicon.d0289dc0.png" alt="">
+      <a data-v-42f0e854="" href="https://beian.miit.gov.cn" target="_blank">粤ICP备2021010015号</a>
+    </div>
+  </div>
 </template>
 <script>
   export default {
