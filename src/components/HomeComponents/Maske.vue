@@ -2,6 +2,11 @@
   <div class="Maskparent">
     <div id="Maske">
       <Center class="center" />
+      <div style=" position: absolute; bottom: 20px; left: calc(50% - 142px); text-align: center;">
+        <p data-v-42f0e854="">© foreile.com 版权所有 Blog由Vue,nodejs驱动.</p>
+        <img data-v-42f0e854="" src="img/beianicon.d0289dc0.png" alt="">
+        <a data-v-42f0e854="" href="https://beian.miit.gov.cn" target="_blank">粤ICP备2022013703号</a>
+      </div>
       <div class="bg"></div>
     </div>
   </div>

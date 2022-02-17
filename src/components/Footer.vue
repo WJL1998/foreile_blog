@@ -2,7 +2,10 @@
   <div v-show="$route.path !== '/home'" id="Footer">
     <div class="talk">
       <img class="wx" src="../assets/images/wx.png" alt="">
-       <p>&copy; foreile.link 版权所有 Blog由Vue,nodejs驱动. <br /><img src="../assets/images/beianicon.png" alt=""><a href="https://beian.miit.gov.cn" target="_blank">粤ICP备2021010015号</a></p>
+       <p>&copy; foreile.com 版权所有 Blog由Vue,nodejs驱动.
+         <br />
+         <img src="../assets/images/beianicon.png" alt=""><a href="https://beian.miit.gov.cn" target="_blank">粤ICP备2022013703号</a>
+       </p>
     </div>
   </div>
 </template>

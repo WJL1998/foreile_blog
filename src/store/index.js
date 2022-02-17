@@ -10,7 +10,7 @@ export default new Vuex.Store({
     Color:'#333',
     LoadingShow: false, //loading效果展示
     LoadingTitle:'正在加载请稍后...',
-    baseURL:'https://foreile.link:3000'
+    baseURL:'https://foreile.com:3000'
   },
   mutations: {
     updateShow(state,data) {
