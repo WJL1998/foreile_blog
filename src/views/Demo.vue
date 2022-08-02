@@ -10,7 +10,7 @@
         <Button type="success" @click.native="CatCode(item.code_path)">查看源码</Button>
       </footer>
     </div>
-    <Page class="page" :page-size="6" ：total="12" @on-change="Pagechange" />
+    <Page class="page" :page-size="6" :total="12" @on-change="Pagechange" />
   </div>
 </template>
 <script>
