@@ -1,7 +1,7 @@
 import axios from "axios";
 import store from '../../store/index'
 const baseURL = store.state.baseURL;
-axios.defaults.withCredentials = true;
+// axios.defaults.withCredentials = true;
 function requestConfig(path) {
   let instance = axios.create({
     baseURL: baseURL, // 换成你自己的后台地址
